@@ -107,6 +107,8 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hamburger {
@@ -158,6 +160,11 @@ nav {
 
 .nav-list.show {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .nav-list li {
