@@ -1,0 +1,54 @@
+{
+    "reviews": [
+        {
+            "name": "Marcus Whitfield",
+            "rating": 5,
+            "comment": "Drove off the lot in a '68 Fastback and could not be happier. The sales team knew every detail on the car and did not push me into anything I did not want."
+        },
+        {
+            "name": "Janelle Rivera",
+            "rating": 4,
+            "comment": "Great financing experience. The rate I got was better than my credit union, and paperwork only took about thirty minutes. Would buy from Charge again."
+        },
+        {
+            "name": "Theo Nakamura",
+            "rating": 5,
+            "comment": "Traded in my daily driver and got more than KBB was showing. Honest numbers and no funny business. Highly recommend the trade-in department."
+        },
+        {
+            "name": "Priya Desai",
+            "rating": 4,
+            "comment": "Service department caught a brake issue during my free inspection that I had no idea about. They fixed it same day for a fair price."
+        },
+        {
+            "name": "Wesley Brooks",
+            "rating": 3,
+            "comment": "Nice selection of muscle cars, but the test drive I scheduled online was not actually booked when I got there. Still ended up having a good visit."
+        },
+        {
+            "name": "Amelia Foster",
+            "rating": 5,
+            "comment": "First time buying a classic car and the team walked me through everything. The warranty they offered made me feel a lot more comfortable pulling the trigger."
+        },
+        {
+            "name": "Daniel O'Connor",
+            "rating": 5,
+            "comment": "Bought my Shelby here three years ago and still bring it in for service. The same mechanic has worked on it every time, which I really appreciate."
+        },
+        {
+            "name": "Sofia Martinez",
+            "rating": 4,
+            "comment": "The showroom is spotless and they actually let you sit in the cars without hovering. Bought a Bronco and the whole thing took under two hours."
+        },
+        {
+            "name": "Grant Holloway",
+            "rating": 2,
+            "comment": "Took a while to get a callback after my online inquiry, but once I got through to someone they were helpful. Ended up finding what I wanted elsewhere."
+        },
+        {
+            "name": "Evelyn Park",
+            "rating": 5,
+            "comment": "Financing was easy, the warranty covered an alternator issue at month four, and the loaner car was nicer than my actual car. Really great dealer experience."
+        }
+    ]
+}

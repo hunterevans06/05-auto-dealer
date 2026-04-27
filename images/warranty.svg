@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#003478;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g id="shield">
+	<path class="st0" d="M50,6L16,20v28c0,19.9,14,38.3,34,46c20-7.7,34-26.1,34-46V20L50,6z"/>
+	<path class="st1" d="M44.6,66.8L30.2,52.4l5.7-5.7l8.7,8.7l19.5-19.5l5.7,5.7L44.6,66.8z"/>
+</g>
+</svg>

@@ -1,0 +1,387 @@
+header {
+    background: #ffffff;
+    border-bottom: 3px solid $color-primary;
+}
+
+.header-wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.logo-area {
+    display: inline-block;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+.phone {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $color-primary;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.phone:hover,
+.phone:focus {
+    color: $color-primary-dark;
+    text-decoration: none;
+}
+
+nav {
+    background: $color-primary;
+    position: relative;
+}
+
+.nav-wrapper {
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin: 0.25rem 0.5rem;
+    position: relative;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background: #ffffff;
+    margin: 3px 0;
+    transition: opacity 0.2s ease, transform 0.25s ease;
+}
+
+.hamburger .close-x {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.hamburger.open .bar {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.hamburger.open .close-x {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-list {
+    display: none;
+    width: 100%;
+    background: $color-primary;
+}
+
+.nav-list.show {
+    display: block;
+}
+
+.nav-list li {
+    border-top: 1px solid $color-primary-light;
+}
+
+.nav-list a {
+    display: block;
+    padding: 0.9rem 1rem;
+    color: #ffffff;
+    font-family: $font-heading;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-list a.active {
+    background: $color-primary-dark;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    background: $color-primary-dark;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: $color-hero-overlay;
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    margin-bottom: 0.35rem;
+}
+
+.hero-text p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero-btn {
+    display: inline-block;
+    background: $color-primary;
+    color: #ffffff;
+    padding: 0.55rem 1rem;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    border: 2px solid #ffffff;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #ffffff;
+    color: $color-primary;
+    text-decoration: none;
+}
+
+main {
+    display: block;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    text-align: center;
+    margin: 2rem 0 0.5rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $color-primary;
+    margin: 0.5rem auto 0;
+}
+
+.section-lead {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: $color-muted;
+}
+
+.services {
+    padding: 0 1rem 2rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid $color-border;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.svg-icon {
+    width: 64px;
+    height: 64px;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .anim-spin,
+.card:focus-within .anim-spin {
+    animation: spin 1.2s ease-in-out;
+}
+
+.card:hover .anim-slide,
+.card:focus-within .anim-slide {
+    animation: slide 0.9s ease-in-out;
+}
+
+.card:hover .anim-pulse,
+.card:focus-within .anim-pulse {
+    animation: pulse 0.9s ease-in-out;
+}
+
+.card:hover .anim-wiggle,
+.card:focus-within .anim-wiggle {
+    animation: wiggle 0.7s ease-in-out;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(6px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.15); }
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25%      { transform: rotate(-12deg); }
+    75%      { transform: rotate(12deg); }
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: $color-primary;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: $color-text;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.card-link {
+    display: inline-block;
+    background: $color-primary;
+    color: #ffffff;
+    padding: 0.6rem 1.25rem;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.card-link:hover,
+.card-link:focus {
+    background: $color-primary-dark;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.reviews {
+    background: $color-surface;
+    padding: 1rem 1rem 2.5rem;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #ffffff;
+    border-left: 4px solid $color-primary;
+    padding: 1.25rem;
+}
+
+.review-name {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $color-primary;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.review-stars {
+    color: $color-primary;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.review-stars .empty {
+    color: $color-border;
+}
+
+.review-comment {
+    color: $color-text;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.review-loading {
+    text-align: center;
+    color: $color-muted;
+}
+
+footer {
+    background: $color-primary;
+    color: #ffffff;
+    padding: 1.25rem 1rem;
+}
+
+.copyright {
+    text-align: center;
+    font-family: $font-heading;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}

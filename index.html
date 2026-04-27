@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evans Motors - Classic Muscle &amp; Modern Performance</title>
+    <meta name="description" content="Evans Motors sells and services classic muscle cars and modern performance vehicles. Financing, trade-in, warranty, and test drives available.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a href="index.html" class="logo-area" aria-label="Evans Motors home">
+                <img src="images/logo.png"
+                     srcset="images/logo.png 1x, images/logo@2x.png 2x, images/logo@3x.png 3x"
+                     alt="Evans Motors logo"
+                     class="logo"
+                     width="195"
+                     height="60">
+            </a>
+            <a href="tel:+18005552345" class="phone"><span aria-hidden="true">&#9742;</span> 1-800-555-2345</a>
+        </div>
+        <nav aria-label="Main Navigation">
+            <div class="nav-wrapper">
+                <button type="button" class="hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navList">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="close-x" aria-hidden="true">&times;</span>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li><a href="#" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#">Inventory</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/mustang.jpg" alt="Classic black Ford Mustang fastback" class="hero-img">
+            <div class="hero-text">
+                <h1>Built for the Open Road</h1>
+                <p>Classic muscle meets modern performance.</p>
+                <a href="#services" class="hero-btn">View Our Services</a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-lead">From your first test drive to your last oil change, Evans Motors is here for the life of your vehicle. Explore what we offer below.</p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg class="svg-icon anim-spin" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="#003478" stroke-width="4"/>
+                            <text x="32" y="44" text-anchor="middle" font-family="Oswald, Arial, sans-serif" font-weight="700" font-size="36" fill="#003478">$</text>
+                        </svg>
+                    </div>
+                    <h3>Financing</h3>
+                    <p>Get pre-approved in minutes with flexible terms that work with your budget. We work with over twenty lenders to find you a rate you can live with.</p>
+                    <a href="#" class="card-link">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <svg class="svg-icon anim-slide" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 22 H44 L38 14 M44 22 L38 30" fill="none" stroke="#003478" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M56 42 H20 L26 34 M20 42 L26 50" fill="none" stroke="#003478" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Trade-In</h3>
+                    <p>Bring in your current ride and drive home in a new one. Get an honest offer today based on real market data, not guesswork.</p>
+                    <a href="#" class="card-link">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/warranty.svg" alt="" class="svg-icon anim-pulse" width="64" height="64">
+                    </div>
+                    <h3>Warranty</h3>
+                    <p>Every certified vehicle comes with our Blue Oval warranty for peace of mind. Extended coverage plans are available up to 100,000 miles.</p>
+                    <a href="#" class="card-link">Learn More</a>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon" aria-hidden="true">
+                        <img src="images/test-drive.svg" alt="" class="svg-icon anim-wiggle" width="64" height="64">
+                    </div>
+                    <h3>Test Drive</h3>
+                    <p>Schedule a no pressure test drive online and feel the difference behind the wheel. Take it on the highway, take it home, take your time.</p>
+                    <a href="#" class="card-link">Learn More</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="review-grid" id="reviewGrid">
+                <p class="review-loading">Loading customer reviews&hellip;</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2026 &bull; Evans Motors</p>
+    </footer>
+
+    <script src="js/reviews.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
